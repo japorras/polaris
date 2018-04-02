@@ -1,0 +1,33 @@
+swagger: '2.0'
+info:
+  version: 0.1-SNAPSHOT
+  title: Polaris
+
+basePath: /polaris  
+paths:
+  '/ping':
+    get:
+      parameters:
+      - name: message
+        in: query
+        description: message
+        type: string
+        required: false
+      responses:
+        200:
+          description: Response from server
+          schema:
+            $ref: '#/definitions/PingResponse'
+        404:
+          description: Not found
+      
+definitions:
+  PingResponse:
+    type: object
+    required:
+      - id
+    properties:
+      id:
+        type: string
+      responseMessage:
+        type: string
