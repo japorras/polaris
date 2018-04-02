@@ -1,4 +1,4 @@
-FROM openjdk:8u131-jre-alpine
+FROM alpine:3.7
 
 COPY assets/entrypoint.sh /app/entrypoint.sh
 
@@ -18,7 +18,7 @@ VOLUME /tmp
 
 WORKDIR /app
 
-user springboot
+USER springboot
 
 
 
