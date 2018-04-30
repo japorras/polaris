@@ -3,7 +3,9 @@ info:
   version: 0.1-SNAPSHOT
   title: Polaris
 
-basePath: /polaris  
+basePath: /polaris
+produces:
+  - application/json  
 paths:
   '/ping':
     get:
@@ -20,6 +22,8 @@ paths:
             $ref: '#/definitions/PingResponse'
         404:
           description: Not found
+        500:
+          description: Internal server error
       
 definitions:
   PingResponse:

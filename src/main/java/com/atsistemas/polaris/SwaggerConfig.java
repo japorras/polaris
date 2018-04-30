@@ -21,7 +21,7 @@ class SwaggerConfig {
 	 * @return Swagger Docket
 	 */
 	@Bean
-	public Docket denebApi() {
+	public Docket polarisApi() {
 
 		return new Docket(DocumentationType.SWAGGER_2).select()
 
@@ -37,7 +37,7 @@ class SwaggerConfig {
      */
     private ApiInfo apiInfo() {
         return new ApiInfoBuilder()
-                .title("Apidemo")
+                .title("Polaris")
                 .description("Demo API")
                 .version("0.1-SNAPSHOT")
                 .termsOfServiceUrl("https://es.wikipedia.org/wiki/Polaris_(estrella)")
