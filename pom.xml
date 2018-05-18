@@ -33,7 +33,7 @@
 		<build-helper-maven-plugin.version>3.0.0</build-helper-maven-plugin.version>
 		<springfox.version>2.7.0</springfox.version>
 		<junit.version>4.12</junit.version>
-		<registry.prefix></registry.prefix>
+		<registry.prefix>atsistemas</registry.prefix>
 	</properties>
 
 	<dependencies>
@@ -134,13 +134,13 @@
 						<id>default</id>
 						<goals>
 							<goal>build</goal>
-							<goal>push</goal>
+<!-- 							<goal>push</goal> -->
 						</goals>
 					</execution>
 				</executions>
 				<configuration>
 					<contextDirectory>${project.build.directory}</contextDirectory>
-					<repository>${registry.prefix}atsistemas.orion/${project.artifactId}</repository>
+					<repository>${registry.prefix}/${project.artifactId}</repository>
 					<tag>${project.version}</tag>
 				</configuration>
 			</plugin>
