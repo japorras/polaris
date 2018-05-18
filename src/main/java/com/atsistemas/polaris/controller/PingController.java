@@ -8,8 +8,8 @@ import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Controller;
 
-import com.atsistemas.orion.polaris.generated.api.PingApi;
-import com.atsistemas.orion.polaris.generated.model.PingResponse;
+import com.atsistemas.polaris.generated.api.PingApi;
+import com.atsistemas.polaris.generated.model.PingResponse;
 
 import io.swagger.annotations.Api;
 
