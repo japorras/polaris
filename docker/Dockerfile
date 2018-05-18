@@ -22,6 +22,6 @@ USER springboot
 
 
 
-COPY spring-boot.jar /app/spring-boot.jar
+ONBUILD COPY spring-boot.jar /app/spring-boot.jar
 
 ENTRYPOINT ["./entrypoint.sh"]
